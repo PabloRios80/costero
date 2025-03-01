@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costero - Homenaje a Escritores del Litoral</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Costero</h1>
+            <p>Un homenaje a los escritores y las ficciones que emergen del espíritu costero del Río Paraná y sus arroyos, en la costa de Santa Fe, Argentina.</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#novedades">Novedades</a></li>
+                <li><a href="#autores">Autores</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="novedades">
+            <h2>Novedades</h2>
+            <p>Descubre las últimas noticias y eventos relacionados con los escritores del litoral.</p>
+        </section>
+
+        <section id="autores">
+            <h2>Autores</h2>
+            <div class="lista-autores">
+                <div class="autor">
+                    <img src="hugo_rios.jpg" alt="Hugo Ríos">
+                    <h3>Hugo Ríos</h3>
+                    <button onclick="mostrarAutor('hugo-rios')">Ver más</button>
+                </div>
+                <div class="autor">
+                    <img src="julio_migno.jpg" alt="Julio Migno">
+                    <h3>Julio Migno</h3>
+                    <button onclick="mostrarAutor('julio-migno')">Ver más</button>
+                </div>
+                <div class="autor">
+                    <img src="alcides_greca.jpg" alt="Alcides Greca">
+                    <h3>Alcides Greca</h3>
+                    <button onclick="mostrarAutor('alcides-greca')">Ver más</button>
+                </div>
+                <div class="autor">
+                    <img src="edmundo_rostand.jpg" alt="Edmundo Rostand">
+                    <h3>Edmundo Rostand</h3>
+                    <button onclick="mostrarAutor('edmundo-rostand')">Ver más</button>
+                </div>
+            </div>
+        </section>
+        <section id="hugo-rios" class="autor-detalle">
+            <h2>Hugo Ríos</h2>
+            <div class="autor-contenido">
+                <div class="columna">
+                    <img src="img/hugo_rios.jpg" alt="Hugo Ríos">
+                    <h3>Biografía</h3>
+                    <p>Breve biografía de Hugo Ríos...</p>
+                </div>
+                <div class="columna">
+                    <h3>Obras</h3>
+                    <!-- Enlace al PDF -->
+                    <a href="obras/aquella_negra_nariz_de_lata.pdf" target="_blank">Aquella negra nariz de lata</a>
+                    <h3>Enlaces</h3>
+                    <a href="http://pagina.hugo_rios.com" target="_blank">Página de Hugo Ríos</a>
+                </div>
+                <div class="columna">
+                    <h3>Audios</h3>
+                    <audio controls>
+                        <source src="audios/hugo_rios_entrevista.mp3" type="audio/mpeg">
+                        Tu navegador no soporta la reproducción de audio.
+                    </audio>
+                </div>
+            </div>
+        </section>
+        <!-- Repetir secciones para otros autores -->
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Costero - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
