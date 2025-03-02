@@ -134,6 +134,14 @@ h2 {
     height: auto;
     border-radius: 8px;
 }
+
+/* Estilos para el texto descriptivo del audio */
+.autor-contenido p strong {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+}
 /* Estilos para el reproductor de audio */
 audio {
     width: 100%; /* El reproductor ocupa todo el ancho del contenedor */
