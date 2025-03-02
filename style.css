@@ -114,13 +114,15 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-.autor-contenido {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+/* Estilos para la imagen del autor */
+.autor-contenido img {
+    width: 50%; /* La imagen no será más ancha que su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin: 0 auto 20px; /* Centra la imagen horizontalmente y añade espacio debajo */
+    display: block; /* Convierte la imagen en un elemento de bloque */
 }
-
 .columna {
     flex: 1;
     padding: 10px;
@@ -132,10 +134,11 @@ h2 {
     height: auto;
     border-radius: 8px;
 }
-
+/* Estilos para el reproductor de audio */
 audio {
-    width: 100%;
-    margin-top: 10px;
+    width: 100%; /* El reproductor ocupa todo el ancho del contenedor */
+    margin-top: 10px; /* Espacio arriba del reproductor */
+    margin-bottom: 20px; /* Espacio debajo del reproductor */
 }
 
 footer {
