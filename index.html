@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costero - Escritores del Litoral</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Costero</h1>
+            <p>Un homenaje a los escritores y las ficciones que emergen del espíritu costero del Río Paraná y sus arroyos, en la costa de Santa Fe, Argentina.</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#novedades">Novedades</a></li>
+                <li><a href="#autores">Autores</a></li>
+                <li><a href="#obras">Obras</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECCIÓN AUTORES -->
+        <section id="autores">
+            <h2>Nuestros Escritores</h2>
+            <div class="lista-autores">
+                <!-- Hugo Ríos -->
+                <div class="autor-card">
+                    <img src="img/hugo_rios.jpg" alt="Hugo Ríos" class="autor-foto">
+                    <h3>Hugo Ríos</h3>
+                    <button onclick="mostrarDetalle('hugo-rios')">Ver obras</button>
+                </div>
+
+                <!-- Julio Migno -->
+                <div class="autor-card">
+                    <img src="img/julio_migno.jpg" alt="Julio Migno" class="autor-foto">
+                    <h3>Julio Migno</h3>
+                    <button onclick="mostrarDetalle('julio-migno')">Ver obras</button>
+                </div>
+
+                <!-- Alcides Greca -->
+                <div class="autor-card">
+                    <img src="img/alcides_greca.jpg" alt="Alcides Greca" class="autor-foto">
+                    <h3>Alcides Greca</h3>
+                    <button onclick="mostrarDetalle('alcides-greca')">Ver obras</button>
+                </div>
+
+                <!-- Edmundo Rostand -->
+                <div class="autor-card">
+                    <img src="img/edmundo_rostand.jpg" alt="Edmundo Rostand" class="autor-foto">
+                    <h3>Edmundo Rostand</h3>
+                    <button onclick="mostrarDetalle('edmundo-rostand')">Ver obras</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- DETALLE HUGO RÍOS -->
+        <section id="hugo-rios" class="autor-detalle">
+            <div class="autor-header">
+                <img src="img/hugo_rios.jpg" alt="Hugo Ríos" class="detalle-foto">
+                <div class="autor-info">
+                    <h2>Hugo Eduardo Ríos</h2>
+                    <p class="bio-texto">
+                        Nacido en San Javier (1938 - 2018). Hijo de familia humilde, su padre talabartero y su madre ama de casa. 
+                        Tras mudarse a Santa Fe capital, estudió medicina en Córdoba. Escritor incansable, padre de 7 hijos, 
+                        retornó a su pueblo natal donde desarrolló su obra literaria.
+                    </p>
+                </div>
+            </div>
+
+            OBRAS DESTACADAS
+
+            <div class="obras-container">
+                <!-- Listado completo de obras -->
+                <div class="lista-obras">
+                    <h3>Bibliografía completa</h3>
+                    <ul>
+                        <li>
+                            <a href="#cuentos-de-la-costa" class="enlace-libro">
+                                Cuentos de la Costa (2010)
+                            </a>
+                        </li>
+                        <!-- Mantener otras obras existentes -->
+                        <li>Crónicas del Río sin Orillas (1998)</li>
+                        <li>Memorias de un médico rural (2005)</li>
+                    </ul>
+                </div>
+
+                
+        <!-- Sección específica del libro -->
+        <div id="cuentos-de-la-costa" class="libro-completo">
+            <div class="portada-libro">
+                <img src="img/portadas/cuentos_de_la_costa.jpg" >
+                <h3>Cuentos de la Costa</h3>
+            </div>
+
+        <!-- Listado de cuentos -->
+            <div class="lista-cuentos">
+                <div class="cuento-item">
+                    <h4>1. Aquella negra nariz de lata</h4>
+                    <div class="controles-cuento">
+                        <a href="Obras/cuentos_de_la_costa/aquella_negra_nariz_de_lata.pdf"
+                        target="_blank" 
+                        class="boton-pdf">
+                            PDF
+                        </a>
+                        <!-- Nuevos controles de audio -->
+            <div class="audio-controls">
+                <button class="boton-play-pause" 
+                        data-audio="audios/cuentos_de_la_costa/aquella_negra_nariz_de_lata.mp3">
+                    ▶ Reproducir
+                </button>
+                <p class="creditos-audio">Narrado por: Chia Pereira y Douglas Pereira</p>
+                <input type="range" 
+                    class="volumen" 
+                    min="0" 
+                    max="1" 
+                    step="0.1" 
+                    value="1">
+                <span class="tiempo-audio">
+                    <span class="actual">0:00</span> / 
+                    <span class="total">0:00</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+            <div class="lista-cuentos">
+                <div class="cuento-item">
+                    <h4>2. El zorzal</h4>
+                    <div class="controles-cuento">
+                        <a href="Obras/cuentos_de_la_costa/El zorzal.pdf" 
+                        target="_blank" 
+                        class="boton-pdf">
+                            PDF
+                        </a>
+                <!-- Nuevos controles de audio -->
+            <div class="audio-controls">
+                <button class="boton-play-pause" 
+                        data-audio="audios/cuentos_de_la_costa/el_zorzal.mp3">
+                    ▶ Reproducir
+                </button>
+                <p class="creditos-audio">Narrado por: Graciela Fernandez</p>
+                <input type="range" 
+                    class="volumen" 
+                    min="0" 
+                    max="1" 
+                    step="0.1" 
+                    value="1">
+                <span class="tiempo-audio">
+                    <span class="actual">0:00</span> / 
+                    <span class="total">0:00</span>
+                </span>
+            </div>
+        </div>
+    </div>
+                <div class="cuento-item">
+                    <h4>3. La curación</h4>
+                    <div class="controles-cuento">
+                        <a href="obras/cuentos_de_la_costa/La curación.pdf" 
+                        target="_blank" 
+                        class="boton-pdf">
+                            PDF
+                        </a>
+                        
+            <div class="audio-controls">
+                <button class="boton-play-pause" 
+                        data-audio="audios/cuentos_de_la_costa/la_curacion.mp3">
+                    ▶ Reproducir
+                </button>
+                <p class="creditos-audio">Narrado por: Viviana Rios y Carmen Rios</p>
+                <input type="range" 
+                    class="volumen" 
+                    min="0" 
+                    max="1" 
+                    step="0.1" 
+                    value="1">
+                <span class="tiempo-audio">
+                    <span class="actual">0:00</span> / 
+                    <span class="total">0:00</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+                <div class="cuento-item">
+                    <h4>4. Viejo Carpincho</h4>
+                    <div class="controles-cuento">
+                        <a href="obras/cuentos_de_la_costa/Viejo_carpincho.pdf" 
+                        target="_blank" 
+                        class="boton-pdf">
+                            PDF
+                        </a>
+                        
+            <div class="audio-controls">
+                <button class="boton-play-pause" 
+                        data-audio="audios/cuentos_de_la_costa/viejocarpincho.mp3">
+                    ▶ Reproducir
+                </button>
+                <p class="creditos-audio">Narrado por: Sasha Pereira y Pablo Rios</p>
+                <input type="range" 
+                    class="volumen" 
+                    min="0" 
+                    max="1" 
+                    step="0.1" 
+                    value="1">
+                <span class="tiempo-audio">
+                    <span class="actual">0:00</span> / 
+                    <span class="total">0:00</span>
+                </span>
+            </div>
+        </div>
+    </div>
+    
+                <div class="cuento-item">
+                    <h4>5. El Juicio</h4>
+                    <div class="controles-cuento">
+                        <a href="obras/cuentos_de_la_costa/el_juicio.pdf" 
+                        target="_blank" 
+                        class="boton-pdf">
+                            PDF
+                        </a>
+                        
+            <div class="audio-controls">
+                <button class="boton-play-pause" 
+                        data-audio="audios/cuentos_de_la_costa/el_juicio.mp3">
+                    ▶ Reproducir
+                </button>
+                <p class="creditos-audio">Narrado por: Sa</p>
+                <input type="range" 
+                    class="volumen" 
+                    min="0" 
+                    max="1" 
+                    step="0.1" 
+                    value="1">
+                <span class="tiempo-audio">
+                    <span class="actual">0:00</span> / 
+                    <span class="total">0:00</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    
+                <div class="cuento-item">
+                    <h4>6. La_pelea</h4>
+                    <div class="controles-cuento">
+                        <a href="obras/cuentos_de_la_costa/La_pelea.pdf" 
+                        target="_blank" 
+                        class="boton-pdf">
+                        PDF
+                        </a>
+            
+            <div class="audio-controls">
+                <button class="boton-play-pause" 
+                        data-audio="audios/cuentos_de_la_costa/el_juicio.mp3">
+                    ▶ Reproducir
+                </button>
+                <p class="creditos-audio">Narrado por: Sa</p>
+                <input type="range" 
+                    class="volumen" 
+                    min="0" 
+                    max="1" 
+                    step="0.1" 
+                    value="1">
+                <span class="tiempo-audio">
+                    <span class="actual">0:00</span> / 
+                    <span class="total">0:00</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+                
+                <div class="cuento-item">
+                    <h4>7. El_tapial</h4>
+                    <div class="controles-cuento">
+                        <a href="obras/cuentos_de_la_costa/El_tapial.pdf" 
+                        target="_blank" 
+                        class="boton-pdf">
+                        PDF
+                        </a>
+            
+            <div class="audio-controls">
+                <button class="boton-play-pause" 
+                        data-audio="audios/cuentos_de_la_costa/viejocarpincho.mp3">
+                ▶ Reproducir
+                </button>
+                <p class="creditos-audio">Narrado por: Sasha Pereira y Pablo Rios</p>
+                <input type="range" 
+                    class="volumen" 
+                    min="0" 
+                    max="1" 
+                    step="0.1" 
+                    value="1">
+                <span class="tiempo-audio">
+                    <span class="actual">0:00</span> / 
+                    <span class="total">0:00</span>
+                </span>
+            </div>
+        </div>
+    </div>
+                
+    <div class="cuento-item">
+        <h4>8. El_angel</h4>
+        <div class="controles-cuento">
+            <a href="obras/cuentos_de_la_costa/El_angel.pdf" 
+            target="_blank" 
+            class="boton-pdf">
+            PDF
+            </a>
+
+<div class="audio-controls">
+    <button class="boton-play-pause" 
+            data-audio="audios/cuentos_de_la_costa/viejocarpincho.mp3">
+    ▶ Reproducir
+    </button>
+    <p class="creditos-audio">Narrado por: Sasha Pereira y Pablo Rios</p>
+    <input type="range" 
+        class="volumen" 
+        min="0" 
+        max="1" 
+        step="0.1" 
+        value="1">
+    <span class="tiempo-audio">
+        <span class="actual">0:00</span> / 
+        <span class="total">0:00</span>
+    </span>
+</div>
+</div>
+</div>
+
+                                            
+    <div class="cuento-item">
+        <h4>9. Locura_de_amor</h4>
+        <div class="controles-cuento">
+            <a href="obras/cuentos_de_la_costa/Locura_de_amor.pdf" 
+            target="_blank" 
+            class="boton-pdf">
+            PDF
+            </a>
+
+<div class="audio-controls">
+    <button class="boton-play-pause" 
+            data-audio="audios/cuentos_de_la_costa/viejocarpincho.mp3">
+    ▶ Reproducir
+    </button>
+    <p class="creditos-audio">Narrado por: Sasha Pereira y Pablo Rios</p>
+    <input type="range" 
+        class="volumen" 
+        min="0" 
+        max="1" 
+        step="0.1" 
+        value="1">
+    <span class="tiempo-audio">
+        <span class="actual">0:00</span> / 
+        <span class="total">0:00</span>
+    </span>
+</div>
+</div>
+</div>
+
+
+    <!-- Repetir patrón para los 13 cuentos en el orden especificado -->
+                <!-- ... -->
+
+                <!-- Último cuento -->
+                <div class="cuento-item">
+                    <h4>13. Morir en china</h4>
+                    <div class="controles-cuento">
+                        <a href="obras/cuentos_de_la_costa/morir_en_china.pdf" 
+                        target="_blank" 
+                        class="boton-pdf">
+                            PDF
+                        </a>
+                        <button class="boton-audio" 
+                                data-audio="audios/cuentos_de_la_costa/morir_en_china.mp3">
+                            ▶ Escuchar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <!-- <div class="obras-container">
+                <div class="obra-principal">
+                    <h3>Obra destacada</h3>
+                    <div class="libro-portada"> -->
+                        <!-- <img src="img/portadas/cuentos_de_la_costa.jpg" alt="Cuentos de la Costa">
+                    </div>
+                    <div class="obra-recursos">
+                        <a href="obras/cuentos_de_la_costa/aquella_negra_nariz_de_lata.pdf" 
+                        target="_blank" 
+                        class="boton-pdf">
+                            Descargar "Aquella negra nariz de lata"
+                        </a>
+                        <div class="audio-obra">
+                            <h4>Escuchar versión completa:</h4>
+                            <audio controls>
+                                <source src="audios/cuentos_de_la_costa/aquella_negra_nariz_de_lata.mp3" 
+                                        type="audio/mpeg">
+                                Audio no soportado
+                            </audio>
+                            <p class="creditos-audio">Narrado por: Chia Pereira y Douglas Pereira</p>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- LISTA COMPLETA DE OBRAS -->
+                <!-- <div class="lista-obras">
+                    <h3>Bibliografía completa</h3>
+                    <ul>
+                        <li>Aquella negra nariz de lata (1992)</li>
+                        <li>Crónicas del Río sin Orillas (1998)</li>
+                        <li>Memorias de un médico rural (2005)</li>
+                        <li>Cuentos de la Costa (2010)</li>
+                    </ul>
+                </div>
+            </div>
+        </section> --> -->
+
+        <!-- OTRAS SECCIONES AUTORES (similar structure for others) -->
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Proyecto Costero - Preservando nuestra literatura</p>
+            <p>Contacto: contacto@costero.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
